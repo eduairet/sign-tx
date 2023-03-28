@@ -31,7 +31,7 @@ async function main() {
     let rawTransaction = await wallet.signTransaction(transaction);
     console.log('Raw tx: ', rawTransaction);
     let tx = await alchemy.core.sendTransaction(rawTransaction);
-    console.log(`https://goerli.etherscan.io/tx/${tx.hash}`);
+    console.log(`https://sepolia.etherscan.io/tx/${tx.hash}`);
 }
 
 main();
